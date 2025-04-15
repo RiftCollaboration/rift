@@ -13,10 +13,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
       padding: 20px;
     }
+
+    img {
+      width: 220px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
     iframe {
       width: 90%;
       max-width: 500px;
@@ -24,9 +31,22 @@
       border: none;
       margin-bottom: 20px;
     }
+
     p {
       color: #ccc;
       font-size: 1.1em;
+    }
+
+    a {
+      color: #7ec8f2;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 1em;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 
@@ -34,17 +54,25 @@
   <script>
     setTimeout(function(){
       window.location.href = "https://drive.google.com/drive/folders/1oAZq9J31tl43CJKg1N3VrvNT7Orzslk2?usp=drive_link";
-    }, 30000);
+    }, 40000);
   </script>
 </head>
 
 <body>
+  <!-- Logo -->
+  <img src="https://github.com/RiftCollaboration/rift/raw/main/rift-logo.png" alt="RIFT Logo" />
+
+  <!-- Video Embed -->
   <iframe 
-    src="https://www.youtube.com/embed/O9LDH7MUmUw?autoplay=1&rel=0&modestbranding=1"
-    allow="autoplay; encrypted-media" 
+    src="https://www.youtube.com/embed/O9LDH7MUmUw?rel=0&modestbranding=1"
+    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
   </iframe>
 
+  <!-- Text + Manual Link -->
   <p>Let the hum begin. Redirecting to the archive shortly…</p>
+  <a href="https://drive.google.com/drive/folders/1oAZq9J31tl43CJKg1N3VrvNT7Orzslk2?usp=drive_link" target="_blank">
+    Skip video & enter archive now
+  </a>
 </body>
 </html>
