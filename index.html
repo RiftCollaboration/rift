@@ -18,6 +18,13 @@
       padding: 20px;
     }
 
+    #visitor-count {
+      color: #7ec8f2;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      font-family: monospace;
+    }
+
     img {
       width: 220px;
       margin-top: 30px;
@@ -50,7 +57,7 @@
     }
   </style>
 
-  <!-- Auto-redirect after 30 seconds -->
+  <!-- Auto-redirect after 52 seconds -->
   <script>
     setTimeout(function(){
       window.location.href = "https://drive.google.com/drive/folders/1oAZq9J31tl43CJKg1N3VrvNT7Orzslk2?usp=drive_link";
@@ -59,20 +66,21 @@
 </head>
 
 <body>
+  <!-- Visitor Counter -->
+  <div id="visitor-count">Welcome, you are the ...th person seeking harmony...</div>
+  <script>
+    fetch('https://api.countapi.xyz/hit/rift-site/visits')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('visitor-count').innerText =
+          `Welcome, you are the ${data.value.toLocaleString()}th person seeking harmony...`;
+      });
+  </script>
+
   <!-- Logo -->
   <img src="https://github.com/RiftCollaboration/rift/raw/main/rift-logo.png" alt="RIFT Logo" />
 
   <!-- Video Embed -->
   <iframe 
     src="https://www.youtube.com/embed/O9LDH7MUmUw?rel=0&modestbranding=1"
-    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
-
-  <!-- Text + Manual Link -->
-  <p>Let the hum begin. Redirecting to the archive shortly…</p>
-  <a href="https://drive.google.com/drive/folders/1oAZq9J31tl43CJKg1N3VrvNT7Orzslk2?usp=drive_link" target="_blank">
-    Skip video & enter archive now
-  </a>
-</body>
-</html>
+    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
