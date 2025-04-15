@@ -3,55 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="refresh" content="8; url=https://drive.google.com/drive/folders/1oAZq9J31tl43CJKg1N3VrvNT7Orzslk2?usp=drive_link" />
-  <title>R.I.F.T. Archive Access</title>
+  <title>R.I.F.T. Entry</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background-color: #000000 !important;
-      color: #ffffff !important;
-      font-family: 'Segoe UI', sans-serif;
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
       text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       min-height: 100vh;
+      padding: 20px;
     }
-    .message {
-      max-width: 600px;
-      font-size: 1.2em;
+    iframe {
+      width: 90%;
+      max-width: 500px;
+      height: 315px;
+      border: none;
       margin-bottom: 20px;
     }
-    a {
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 1.2em;
-      text-decoration: underline;
-    }
-    .timer {
-      font-size: 0.9em;
-      color: #888;
-      margin-top: 15px;
+    p {
+      color: #ccc;
+      font-size: 1.1em;
     }
   </style>
+
+  <!-- Auto-redirect after 30 seconds -->
+  <script>
+    setTimeout(function(){
+      window.location.href = "https://drive.google.com/drive/folders/1oAZq9J31tl43CJKg1N3VrvNT7Orzslk2?usp=drive_link";
+    }, 30000);
+  </script>
 </head>
+
 <body>
- <img src="https://github.com/RiftCollaboration/rift/raw/main/rift-logo.png"
-     alt="RIFT Logo"
-     width="600"
-     height="auto"
-     style="max-width: 90vw; display: block;" />
-  <div class="message">
-    We’re just beginning to hum.<br />
-    This is only the start of something resonant.<br /><br />
-    You’ll be redirected in a moment,<br />
-    or you can enter the archive directly:
-  </div>
-  <a href="https://drive.google.com/drive/folders/1oAZq9J31tl43CJKg1N3VrvNT7Orzslk2?usp=drive_link" target="_blank">
-    Visit the R.I.F.T. Archive Folder
-  </a>
-  <div class="timer">(Redirecting in 8 seconds...)</div>
+  <iframe 
+    src="https://www.youtube.com/embed/O9LDH7MUmUw?autoplay=1&rel=0&modestbranding=1"
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+
+  <p>Let the hum begin. Redirecting to the archive shortly…</p>
 </body>
 </html>
